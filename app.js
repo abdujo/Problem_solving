@@ -181,7 +181,27 @@
 
 // console.log(isLoggedInAndSubscribed("LOGGED_IN", "UNSUBSCRIBED"))
 
-function falsyOrTruthy(elem1, elem2) {
-    return (!elem1) ? elem1 : elem2
+// function falsyOrTruthy(elem1, elem2) {
+//     return (!elem1) ? elem1 : elem2
+// }
+// console.log(falsyOrTruthy(true, 'Dog'))
+
+
+// // Array length
+// function arrLength(arr) {
+//     return arr[arr.length-1];
+// }
+// console.log(arrLength([4, 5, 6, 10, -12]));
+
+
+
+
+
+function arrSum(arr) {
+    let sum = 0;
+    for  (let i = 0; i < arr.length; ++i) {
+        sum = sum + arr[i];
+    }
+    return sum;
 }
-console.log(falsyOrTruthy(true, 'Dog'))
+console.log(arrSum([0, -5, -10]));
